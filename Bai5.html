@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai5</title>
+</head>
+<body>
+<script>
+    let diem = prompt("nhập điểm toán,văn,anh,lý,hóa:","");
+    let sum =0;
+    for (let e of diem){
+        e=Number(e);
+        sum+=e;
+    }
+    let avg = sum/diem.length;
+    if ((avg>=8.5)&&((diem[1]||diem[2])>=8.5)){
+        alert("học sinh giỏi");
+    }else if ((avg>=6.5)&&((diem[1]||diem[2])>=6.5)){
+        alert("học sinh khá");
+    } else if ((avg>=3.5)&&((diem[1]||diem[2])>=3.5)){
+        alert("học sinh trung bình");
+    } else {alert("sao bạn ngu thế @@ !")}
+</script>
+</body>
+</html>

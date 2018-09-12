@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    let num = prompt("nhập 3 số a,b,c:","").split(",");
+    let min = Number(num[0]);
+    for (let e of num){
+        if (Number(e)<min){
+            min = Number(e);
+        }
+    }
+    alert("min is "+min);
+</script>
+</body>
+</html>
